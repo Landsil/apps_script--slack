@@ -23,18 +23,18 @@ function pull_channel_info() {
   //Assebling responce
   var dataAll = JSON.parse(response.getContentText());
   var channel = dataAll.channel;
-  var channelTopic = channel.topic.value;
+  var channelTopicCurrent = channel.topic.value;
   
 
-  Logger.log("channelTopic")
-  Logger.log(channelTopic)
+  Logger.log("channelTopicCurrent")
+  Logger.log(channelTopicCurrent)
 
 }
 
 
 
 /*******************************************************************************************************************************************
- * Pull channel info
+ * Pull group info
  * https://api.slack.com/methods/usergroups.users.list
  * You will need to make a slack app with access to API https://api.slack.com/apps 
  * store credentials in Project Properties
